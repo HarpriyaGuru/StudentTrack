@@ -1,0 +1,158 @@
+*{
+ margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color:blanchedalmond;
+line-height: 1.8;
+}
+/* ------------------------------------------------Header--------------------------------------------------------- */
+header {
+background-color: purple;
+color: white;
+padding: 20px;
+text-align: center;
+box-shadow: 5px 5px 5px grey;
+width: 90%;
+margin: auto;
+}
+header:hover{
+    background-color: plum;
+    color: black;
+    cursor: pointer;
+}
+header h1 {
+font-size: 3rem;
+}
+header p {
+width: 80%;
+margin: 0.5rem auto;
+text-align: justify;
+font-size: 1rem;
+}
+/* -----------------------------------------------header----------------------------------------------------------- */
+/* -----------------------------------------------Form------------------------------------------------------------- */
+section{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 5px 5px 5px plum;
+
+        }
+section h2{
+            color: purple;
+            font-size: 2rem;
+        }
+section .form-section{
+        width: 40%;
+         background-color: white;
+         padding: 20px;
+        border-radius: 8px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+section .form-section table {
+    width: 100%;
+    border-collapse: collapse;
+    }
+section .form-section td {
+    padding: 10px;
+}
+
+section .form-section label {
+    font-weight: bold;
+}
+
+    section .form-section input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+        }
+        section .form-section .btn
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            margin:1rem auto;
+        }
+        section .form-section .btn button,
+        section .form-section button
+        {
+            background-color:purple;
+            color: white;
+            border: none;
+           padding: 10px 20px;
+           font-size: 16px;
+           cursor: pointer;
+            border-radius: 4px;
+           text-align: center;
+           font-weight: 800;
+           margin: 5px;
+        }
+        section .form-section .btn button:hover{
+            background-color:plum;
+            color: black;
+
+        }
+        section .form-section .submitted{
+            text-align: center;
+            display: none;
+            margin:4rem;
+        }
+
+        section .form-section .submitted h2{
+            color: green;
+        }
+
+/* -----------------------------------------------Form------------------------------------------------------------- */
+/* -----------------------------------------------table------------------------------------------------------------- */
+
+        section .table-section{
+            width: 70%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .table-section h2 {
+    text-align: center;
+    color: purple;
+    margin-bottom: 20px;
+}
+
+ section .table-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+ section .table-section th, .table-section td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+ section .table-section th {
+    background-color: purple;
+    color: white;
+}
+
+ section .table-section tr:nth-child(even) {
+    background-color:blanchedalmond;
+}
+
+ section .table-section tr:hover {
+    background-color:plum;
+}
+
+ section .table-section .btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* -----------------------------------------------table------------------------------------------------------------- */

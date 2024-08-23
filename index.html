@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentTrack is a comprehensive student registration and data management system offering a user-friendly interface for efficient enrollment and record management.">
+    <meta name="keywords" content="Student Registration, Data Management, User-Friendly Interface, Enrollment System">
+    <meta name="author" content="Harpriya Guru">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>StudentTrack</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>StudentTrack</title>
+</head>
+<body>
+    <header>
+        <h1>StudentTrack</h1>
+        <p>"StudentTrack" is a robust and user-friendly platform designed to streamline the student registration process for educational institutions of all sizes. It offers a seamless experience for capturing and managing student data, with features such as real-time updates, data persistence, and an intuitive interface. StudentTrack ensures that records are accurately maintained and easily accessible, even after browser sessions are closed. By simplifying the registration process, it helps institutions enhance organization, improve accuracy, and increase productivity.</p>
+    </header>
+    <section>
+         <div class="form-section">
+            <h2>Student Registration Form</h2>
+            <form id="myForm">
+                <table>
+                    <tr>
+                        <td><label for="studentId">Student ID:</label></td>
+                        <td><input type="number" id="studentId" name="studentId" placeholder="Enter your Student ID" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Student Name:</label></td>
+                        <td><input type="text" id="name" name="name" placeholder="Enter Your Full Name"  required minlength="2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email ID:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Enter your Email ID" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="contact">Contact Number:</label></td>
+                        <td><input type="tel" id="contact" name="contact" placeholder="Enter your Contact Number" required pattern="[0-9]{10}"></td>
+                    </tr>
+                </table>
+            </form>
+            <div class="btn" id="btn">
+                <button type="submit"  id="submitbtn" onclick="submitForm()">Submit Form</button>
+                <button type="reset"  id="resetbtn">Reset Form</button>
+            </div>
+         </div>
+         <div class="table-section">
+            <h2>Student Data</h2>
+            <div class="studentData">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Student Name</th>
+                            <th>Email ID</th>
+                            <th>Contact Number</th>
+                            <th>Delete</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentinfo">
+                        <tr id="no-record-row">
+                            <td colspan="6" class="no-record">No record Found</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+         </div>
+    </section>
+</body> 
+</html>
